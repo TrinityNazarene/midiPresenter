@@ -55,9 +55,11 @@ python-rtmidi is the python wrapper for this program. I had to install the [pyth
 
 The fs_usage utility requires sudo permissions by default
 To allow fs_usage from non-sudo in Mac OSX:
-    "sudo visudo"
-    add line at bottom of file
-    TrintyTech ALL=(ALL) NOPASSWD: /usr/bin/fs_usage
+```
+"sudo visudo"
+add line at bottom of file
+TrintyTech ALL=(ALL) NOPASSWD: /usr/bin/fs_usage
+```
 
 
 To start the Mac remote midi feature
