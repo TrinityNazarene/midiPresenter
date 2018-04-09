@@ -21,7 +21,7 @@ class EventListener:
 					self._queue.put(parsed)
 
 		def _parseLine(line):
-			return line.strip()
+			return line.strip().replace(">","")
 		
 		#startup a new thread
 		self._thread = threading.Thread(target = _readStream, args = (self,))
